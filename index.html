@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvET Besi Çiftliği | Gebze Kurbanlık ve Büyükbaş Hayvan Satışı</title>
+    <meta name="description" content="Gebze Tavşanlı köyünde güvenilir kurbanlık, büyükbaş hayvan ve hisse satışı. Doğal besi çiftliğimizden aracısız alım yapmak için hemen iletişime geçin.">
+    <meta name="keywords" content="gebze kurbanlık, tavşanlı köyü besi çiftliği, kocaeli hisse satışı, büyükbaş hayvan, evet besi çiftliği">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.png" type="image/png">
+
+    <!-- Open Graph (OG) Meta Tags -->
+    <meta property="og:title" content="EvET Besi Çiftliği | Gebze Kurbanlık ve Büyükbaş Hayvan Satışı">
+    <meta property="og:description" content="Gebze Tavşanlı köyünde güvenilir kurbanlık, büyükbaş hayvan ve hisse satışı. Doğal besi çiftliğimizden aracısız alım yapmak için hemen iletişime geçin.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="EvET Besi Çiftliği" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            green: '#1a3622', // Very dark green
+                            light: '#2a5b3a', // Lighter green for hover/accents
+                            primary: '#2d6a4f',
+                            accent: '#d4a373', // Earthy tone
+                            earth: '#8b5a2b',
+                        }
+                    },
+                    animation: {
+                        'bounce-slow': 'bounce 3s infinite',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- WebSite JSON-LD Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "EvET Besi Çiftliği",
+      "url": "https://www.evetbesiciftligi.com/"
+    }
+    </script>
+
+    <!-- Blog ItemList Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "İslami Usullerin Önemi"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Profesyonel Kasap Tercihi"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Etin Dinlendirilmesi"
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="font-sans text-stone-800 bg-stone-50 overflow-x-hidden">
+
+    <!-- Sticky Navbar -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 py-5 px-6 md:px-12 flex justify-between items-center bg-transparent">
+        <a href="#" class="flex items-center hover:opacity-90 transition-opacity p-2 -ml-2 drop-shadow-md">
+            <img src="assets/logo.png" alt="EvET Besi Çiftliği" class="h-12 sm:h-14 w-auto" />
+        </a>
+        <a href="#contact" class="px-6 py-2.5 rounded-full bg-white/10 backdrop-blur-md text-white border border-white/20 hover:bg-white/20 transition-all font-medium text-sm shadow-sm">
+            İletişim
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[100svh] flex items-center justify-center pt-20 px-4">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="assets/hero_bg.png" alt="Gebze Tavşanlı EvET Besi Çiftliği - Kurbanlık ve Büyükbaş Hayvan" class="w-full h-full object-cover select-none" />
+            <!-- Overlays to ensure text visibility -->
+            <!-- Dark Green Color Multiply Overlay -->
+            <div class="absolute inset-0 bg-brand-green/80 mix-blend-multiply"></div>
+            <!-- Standard Darkening Overlay -->
+            <div class="absolute inset-0 bg-black/45"></div>
+            <!-- Bottom Fade to blend with next section -->
+            <div class="absolute inset-0 bg-gradient-to-t from-stone-50 via-transparent to-transparent"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 w-full max-w-5xl mx-auto text-center flex flex-col items-center mt-12 md:mt-0">
+            <!-- Top Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-accent/20 backdrop-blur-sm border border-brand-accent/30 text-brand-accent text-sm font-medium mb-12 md:mb-6 animate-fade-in-up">
+                <i class="fa-solid fa-award"></i>
+                <span class="tracking-wide uppercase text-xs font-bold">100% Doğal Üretim</span>
+            </div>
+
+            <!-- Main Heading H1 -->
+            <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-bold text-white mb-12 md:mb-6 py-2 md:py-0 drop-shadow-2xl tracking-tight leading-tight">
+                Ev<span class="text-[#e3000f] drop-shadow-[0_0_15px_rgba(227,0,15,0.4)]">ET</span> BESİ <br class="hidden sm:block"/> ÇİFTLİĞİ
+            </h1>
+
+            <!-- Subtitle -->
+            <h2 class="text-lg md:text-2xl text-stone-200 font-light mb-16 md:mb-12 max-w-3xl drop-shadow-md leading-relaxed">
+                Kurbanlıkta Güvenin, Besicilikte Kalitenin Adresi
+                <span class="font-medium text-white flex items-center justify-center gap-2 mt-3 opacity-90 text-base md:text-lg">
+                    <i class="fa-solid fa-location-dot text-brand-accent"></i> Gebze / Tavşanlı Köyü
+                </span>
+            </h2>
+
+            <!-- Action Buttons Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-2xl px-4 md:px-0">
+                <!-- 1. Hemen Ara -->
+                <a href="tel:+905354831313" class="group relative flex items-center justify-center gap-3 px-6 py-4 bg-brand-primary hover:bg-brand-light text-white rounded-xl font-medium transition-all duration-300 shadow-lg shadow-brand-primary/30 hover:shadow-brand-primary/50 transform hover:-translate-y-1 overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
+                    <i class="fa-solid fa-phone text-xl group-hover:rotate-12 transition-transform"></i>
+                    <span class="relative z-10 w-full text-left sm:text-center text-[15px]">Hemen Ara</span>
+                </a>
+
+                <!-- 2. WhatsApp'tan Fiyat Al -->
+                <a href="https://wa.me/905354831313" target="_blank" class="group relative flex items-center justify-center gap-3 px-6 py-4 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-xl font-medium transition-all duration-300 shadow-lg shadow-[#25D366]/30 hover:shadow-[#25D366]/50 transform hover:-translate-y-1 overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
+                    <i class="fa-brands fa-whatsapp text-2xl group-hover:scale-110 transition-transform"></i>
+                    <span class="relative z-10 w-full text-left sm:text-center text-[15px]">WhatsApp'tan Fiyat Al</span>
+                </a>
+
+                <!-- 3. Yol Tarifi Al -->
+                <a href="https://www.google.com/maps/place/40%C2%B050'18.7%22N+29%C2%B030'00.8%22E/@40.8385239,29.4976444,17z/data=!3m1!4b1!4m4!3m3!8m2!3d40.8385239!4d29.5002193?hl=tr&entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="group flex items-center justify-center gap-3 px-6 py-4 bg-black/40 backdrop-blur-md border border-brand-accent/40 hover:bg-black/60 hover:border-brand-accent text-white rounded-xl font-medium transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(212,163,115,0.2)]">
+                    <i class="fa-solid fa-map-location-dot text-brand-accent text-xl group-hover:-translate-y-1 transition-transform"></i>
+                    <span class="w-full text-left sm:text-center text-[15px]">Yol Tarifi Al</span>
+                </a>
+
+                <!-- 4. Instagram'da İncele -->
+                <a href="https://www.instagram.com/evetetciftligi/" target="_blank" class="group flex items-center justify-center gap-3 px-6 py-4 bg-black/40 backdrop-blur-md border border-stone-500/40 hover:bg-black/60 hover:border-stone-400 text-white rounded-xl font-medium transition-all duration-300 transform hover:-translate-y-1">
+                    <i class="fa-brands fa-instagram text-stone-300 group-hover:text-pink-500 text-2xl transition-colors duration-300"></i>
+                    <span class="w-full text-left sm:text-center text-[15px]">Instagram'da İncele</span>
+                </a>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="mt-8 md:mt-16 flex flex-col items-center opacity-70 hover:opacity-100 transition-opacity">
+                <span class="text-white/80 text-xs tracking-widest uppercase mb-3 font-medium">Daha Fazla</span>
+                <i class="fa-solid fa-chevron-down text-white animate-bounce-slow text-2xl"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hizmetlerimiz Section -->
+    <section id="services" class="pt-24 pb-8 md:py-24 bg-[#f9fafb] relative z-20">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-display font-bold text-brand-green mb-6">Hizmetlerimiz</h2>
+                <div class="w-24 h-1.5 bg-gradient-to-r from-brand-green to-brand-accent mx-auto rounded-full"></div>
+            </div>
+
+            <!-- Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-2 md:mb-16">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-md hover:shadow-xl transition-all duration-300 border border-stone-100 flex flex-col items-center text-center group hover:-translate-y-2">
+                    <div class="w-20 h-20 bg-brand-light/10 rounded-2xl flex items-center justify-center text-brand-primary mb-6 group-hover:bg-brand-primary group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-cow text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-display font-bold mb-4 text-stone-800">Kurbanlık Satışı</h3>
+                    <p class="text-stone-600 leading-relaxed font-light">İslami usullere uygun, veteriner hekim kontrolünde yetiştirilmiş sağlıklı kurbanlıklar.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-md hover:shadow-xl transition-all duration-300 border border-stone-100 flex flex-col items-center text-center group hover:-translate-y-2">
+                    <div class="w-20 h-20 bg-brand-accent/15 rounded-2xl flex items-center justify-center text-brand-accent mb-6 group-hover:bg-brand-accent group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-chart-pie text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-display font-bold mb-4 text-stone-800">Hisse Satışı</h3>
+                    <p class="text-stone-600 leading-relaxed font-light">Büyükbaş kurbanlıklar için güvenilir, eşit dağıtımlı ve şeffaf hisse organizasyonu.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-md hover:shadow-xl transition-all duration-300 border border-stone-100 flex flex-col items-center text-center group hover:-translate-y-2">
+                    <div class="w-20 h-20 bg-brand-light/10 rounded-2xl flex items-center justify-center text-brand-primary mb-6 group-hover:bg-brand-primary group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-tags text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-display font-bold mb-4 text-stone-800">Büyükbaş Hayvan Satışı</h3>
+                    <p class="text-stone-600 leading-relaxed font-light">Yılın her dönemi özenle beslenmiş, birinci sınıf kalitede büyükbaş hayvan temini.</p>
+                </div>
+            </div>
+
+            <!-- Important Notice Box Removed -->
+        </div>
+    </section>
+
+
+    <!-- Kurban Rehberi Section -->
+    <section id="blog" class="py-20 md:py-24 bg-[#f9fafb] relative z-20">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-5xl font-display font-bold text-brand-green mb-6">Kurban Kesimi Hakkında Önemli Bilgiler</h2>
+                <div class="w-24 h-1.5 bg-gradient-to-r from-brand-green to-brand-accent mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+                <!-- Blog Card 1 -->
+                <article class="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-500 border border-stone-100 group flex flex-col">
+                    <div class="h-48 overflow-hidden relative border-b border-stone-100 bg-stone-100">
+                        <img src="assets/blog1.jpg" alt="Gebze Tavşanlı doğal besi büyükbaş ve kurbanlık kesimi" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <div class="p-8 flex flex-col flex-1">
+                        <h3 class="text-lg md:text-xl font-display font-bold text-stone-800 mb-4 group-hover:text-brand-primary transition-colors leading-snug">Kurban İbadetinde İslami Usullerin Önemi</h3>
+                        <div class="flex-1 mb-6">
+                            <p class="text-stone-600 leading-relaxed font-light text-[15px] text-justify">Kurban kesiminde niyetten tekbire, hayvanın yaşı, sağlığı ve fiziki yeterliliğine kadar dikkat edilmesi gereken dini hassasiyetler ve fıkhi detaylar nelerdir?</p>
+                            <div id="blog-content-1" class="overflow-hidden max-h-0 transition-all duration-500 ease-in-out opacity-0">
+                                <div class="pt-4 mt-4 border-t border-stone-100/50">
+                                    <p class="text-stone-600 leading-relaxed font-light text-[15px] text-justify">Kurbanlık hayvanın seçiminde dikkat edilmesi gereken en temel kural, hayvanın İslami referanslara uygun yaşını doldurmuş ve görünür kalıcı bir fiziki kusurunun bulunmamasıdır. Kesim esnasında hayvanlara eziyet edilmemesi, doğru bıçak kullanımı ve hayvanın kıbleye yöneltilerek usulünce tekbir getirilmesi detaylarına çiftliğimizde hassasiyetle uyulmaktadır.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button onclick="toggleBlog('blog-content-1', this)" class="inline-flex items-center gap-2 text-sm font-bold text-brand-green hover:text-brand-accent transition-colors w-fit mt-auto group/btn cursor-pointer outline-none">
+                            <span>Devamını Oku</span> <i class="fa-solid fa-chevron-down transform transition-transform duration-300"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Blog Card 2 -->
+                <article class="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-500 border border-stone-100 group flex flex-col">
+                    <div class="h-48 overflow-hidden relative border-b border-stone-100 bg-stone-100">
+                        <img src="assets/blog2.jpg" alt="EvET Besi Çiftliği İslami usullere uygun porsiyonlama ve kasaplık" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <div class="p-8 flex flex-col flex-1">
+                        <h3 class="text-lg md:text-xl font-display font-bold text-stone-800 mb-4 group-hover:text-brand-primary transition-colors leading-snug">Neden Profesyonel Kasaplar Tercih Edilmeli?</h3>
+                        <div class="flex-1 mb-6">
+                            <p class="text-stone-600 leading-relaxed font-light text-[15px] text-justify">Hayvanın strese girmemesi, et kalitesinin korunması ve iş güvenliği açısından kesim, yüzme ve parçalama işlemlerinin uzman ekiplerce yapılmasının sağladığı avantajlar.</p>
+                            <div id="blog-content-2" class="overflow-hidden max-h-0 transition-all duration-500 ease-in-out opacity-0">
+                                <div class="pt-4 mt-4 border-t border-stone-100/50">
+                                    <p class="text-stone-600 leading-relaxed font-light text-[15px] text-justify">Kesim işlemlerinin ehliyetli kişilerce yapılması, hayvan refahını sağlamakla birlikte etin doğru noktalardan kesilip parçalanarak fire verilmesini de en aza indirger. Deri yüzme işleminin itina ile kalitesini yitirmeden yapılmasını sağlayan usta kasap ekibimiz, en modern hijyen kurallarına dikkat ederek süreci kısa sürede profesyonelce tamamlamaktadır.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button onclick="toggleBlog('blog-content-2', this)" class="inline-flex items-center gap-2 text-sm font-bold text-brand-green hover:text-brand-accent transition-colors w-fit mt-auto group/btn cursor-pointer outline-none">
+                            <span>Devamını Oku</span> <i class="fa-solid fa-chevron-down transform transition-transform duration-300"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Blog Card 3 -->
+                <article class="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-500 border border-stone-100 group flex flex-col">
+                    <div class="h-48 overflow-hidden relative border-b border-stone-100 bg-stone-100">
+                        <img src="assets/blog3.jpg" alt="Hijyenik karkas et dinlendirme ve adil hisse paylaştırma" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <div class="p-8 flex flex-col flex-1">
+                        <h3 class="text-lg md:text-xl font-display font-bold text-stone-800 mb-4 group-hover:text-brand-primary transition-colors leading-snug">Kesim Sonrası Etin Dinlendirilmesi ve Paylaşım</h3>
+                        <div class="flex-1 mb-6">
+                            <p class="text-stone-600 leading-relaxed font-light text-[15px] text-justify">Sağlıklı tüketim için kurban etinin uygun sıcaklıkta dinlendirilme süresi, doğru saklama koşulları ve hisse dağıtımında dikkat edilmesi gereken adalet ilkeleri.</p>
+                            <div id="blog-content-3" class="overflow-hidden max-h-0 transition-all duration-500 ease-in-out opacity-0">
+                                <div class="pt-4 mt-4 border-t border-stone-100/50">
+                                    <p class="text-stone-600 leading-relaxed font-light text-[15px] text-justify">Taze kesilmiş etin rigormortis (ölüm sertliği) evresini tamamlaması için en az 12-24 saat serin ve hijyenik ortamda dinlendirilmesi önemlidir. Bu sayede etin lezzeti artar ve sindirimi kolaylaşır. Ayrıca İslami kurallar gereğince tüm hissedarlara, kemikli ve kemiksiz bölümlerin tamamen şeffaf ve adaletli olarak, tartı usulüyle paylaştırılması esastır.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button onclick="toggleBlog('blog-content-3', this)" class="inline-flex items-center gap-2 text-sm font-bold text-brand-green hover:text-brand-accent transition-colors w-fit mt-auto group/btn cursor-pointer outline-none">
+                            <span>Devamını Oku</span> <i class="fa-solid fa-chevron-down transform transition-transform duration-300"></i>
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Features Section to allow scrolling & seeing sticky navbar -->
+    <section class="pt-8 pb-24 md:py-24 bg-stone-50 relative z-20">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="text-center mb-10 md:mb-16">
+                <h2 class="text-3xl md:text-5xl font-display font-bold text-brand-green mb-6">Neden Bizi Seçmelisiniz?</h2>
+                <div class="w-24 h-1.5 bg-gradient-to-r from-brand-green to-brand-accent mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                <!-- Card 1 -->
+                <div class="bg-white p-10 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-500 border border-stone-100 group hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-brand-green/10 rounded-2xl flex items-center justify-center text-brand-green mb-8 group-hover:bg-brand-green group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-cow text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-display font-bold mb-4 text-stone-800">Doğal Besi Ortamı</h3>
+                    <p class="text-stone-600 leading-relaxed font-light">Hayvanlarımız %100 doğal yemlerle, veteriner kontrolünde stresten uzak, geniş alanlarımızda sağlıklı bir şekilde özenle yetiştirilmektedir.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-10 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-500 border border-stone-100 group hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-brand-accent/15 rounded-2xl flex items-center justify-center text-brand-accent mb-8 group-hover:bg-brand-accent group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-scale-balanced text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-display font-bold mb-4 text-stone-800">Şeffaf Tartım & Kesim</h3>
+                    <p class="text-stone-600 leading-relaxed font-light">Canlı baskül veya karkas teslimat seçenekleriyle tam şeffaflık. İslami usullere uygun nezih hijyenik ortamlarda uzman kasaplarımızla kesim.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-10 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-500 border border-stone-100 group hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-brand-green/10 rounded-2xl flex items-center justify-center text-brand-green mb-8 group-hover:bg-brand-green group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-truck-fast text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-display font-bold mb-4 text-stone-800">Kolay Ulaşım</h3>
+                    <p class="text-stone-600 leading-relaxed font-light">İstanbul ve çevre illerden kolaylıkla ulaşılabilecek bir noktadayız. Tesisimize olan yolculuğunuz, rahat bir otopark deneyimiyle son bulur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kurban Bayramı Geri Sayım Sayacı -->
+    <section id="countdown" class="py-20 md:py-24 bg-[#14291a] relative z-20 overflow-hidden">
+        <!-- Background Overlay for aesthetics -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-[url('assets/hero_bg.png')] bg-cover bg-center opacity-5 mix-blend-overlay"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#112417] via-transparent to-transparent opacity-80"></div>
+        </div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-4 md:px-8 text-center flex flex-col items-center">
+            
+            <!-- Top Badge -->
+            <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-brand-accent/10 sm:bg-brand-accent/20 backdrop-blur-md border border-brand-accent/30 text-brand-accent text-sm font-medium mb-6 animate-fade-in-up">
+                <i class="fa-regular fa-calendar-check text-base"></i>
+                <span class="tracking-widest uppercase text-[11px] md:text-xs font-bold">Büyük Güne Yaklaşıyoruz</span>
+            </div>
+
+            <!-- SEO Title -->
+            <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-12 lg:mb-16 drop-shadow-xl tracking-tight px-4 leading-tight">
+                2026 Kurban Bayramı'na Kalan Süre
+            </h2>
+
+            <!-- Countdown Timer Container -->
+            <div id="countdown-timer" class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 w-full max-w-4xl mx-auto">
+                
+                <!-- Days -->
+                <div class="bg-black/30 backdrop-blur-md border border-brand-accent/20 rounded-2xl md:rounded-3xl p-5 sm:p-6 md:p-8 flex flex-col items-center justify-center transform hover:-translate-y-2 hover:border-brand-accent/50 hover:bg-black/40 hover:shadow-[0_10px_30px_rgba(212,163,115,0.15)] transition-all duration-300 group">
+                    <span id="cd-days" class="text-5xl sm:text-6xl md:text-7xl font-display font-bold text-white mb-1 md:mb-2 drop-shadow-md group-hover:scale-105 transition-transform duration-300">00</span>
+                    <span class="text-brand-accent font-medium uppercase tracking-widest text-[10px] sm:text-xs md:text-sm opacity-90 group-hover:opacity-100">Gün</span>
+                </div>
+
+                <!-- Hours -->
+                <div class="bg-black/30 backdrop-blur-md border border-brand-accent/20 rounded-2xl md:rounded-3xl p-5 sm:p-6 md:p-8 flex flex-col items-center justify-center transform hover:-translate-y-2 hover:border-brand-accent/50 hover:bg-black/40 hover:shadow-[0_10px_30px_rgba(212,163,115,0.15)] transition-all duration-300 group">
+                    <span id="cd-hours" class="text-5xl sm:text-6xl md:text-7xl font-display font-bold text-white mb-1 md:mb-2 drop-shadow-md group-hover:scale-105 transition-transform duration-300">00</span>
+                    <span class="text-brand-accent font-medium uppercase tracking-widest text-[10px] sm:text-xs md:text-sm opacity-90 group-hover:opacity-100">Saat</span>
+                </div>
+
+                <!-- Minutes -->
+                <div class="bg-black/30 backdrop-blur-md border border-brand-accent/20 rounded-2xl md:rounded-3xl p-5 sm:p-6 md:p-8 flex flex-col items-center justify-center transform hover:-translate-y-2 hover:border-brand-accent/50 hover:bg-black/40 hover:shadow-[0_10px_30px_rgba(212,163,115,0.15)] transition-all duration-300 group">
+                    <span id="cd-minutes" class="text-5xl sm:text-6xl md:text-7xl font-display font-bold text-white mb-1 md:mb-2 drop-shadow-md group-hover:scale-105 transition-transform duration-300">00</span>
+                    <span class="text-brand-accent font-medium uppercase tracking-widest text-[10px] sm:text-xs md:text-sm opacity-90 group-hover:opacity-100">Dakika</span>
+                </div>
+
+                <!-- Seconds -->
+                <div class="bg-black/30 backdrop-blur-md border border-brand-accent/20 rounded-2xl md:rounded-3xl p-5 sm:p-6 md:p-8 flex flex-col items-center justify-center transform hover:-translate-y-2 hover:border-brand-accent/50 hover:bg-black/40 hover:shadow-[0_10px_30px_rgba(212,163,115,0.15)] transition-all duration-300 group">
+                    <span id="cd-seconds" class="text-5xl sm:text-6xl md:text-7xl font-display font-bold text-white mb-1 md:mb-2 drop-shadow-md group-hover:scale-105 transition-transform duration-300">00</span>
+                    <span class="text-brand-accent font-medium uppercase tracking-widest text-[10px] sm:text-xs md:text-sm opacity-90 group-hover:opacity-100">Saniye</span>
+                </div>
+
+            </div>
+            
+            <!-- Call to action button under countdown -->
+            <div class="mt-12 md:mt-16 sm:px-4 w-full sm:w-auto">
+                <a href="https://wa.me/905354831313" target="_blank" class="w-full sm:w-auto flex sm:inline-flex items-center justify-center gap-3 px-8 py-4 sm:py-5 bg-brand-accent hover:bg-[#b0855b] text-white rounded-xl sm:rounded-2xl font-bold transition-all duration-300 shadow-[0_4px_20px_rgba(212,163,115,0.3)] hover:shadow-[0_8px_30px_rgba(212,163,115,0.5)] transform hover:-translate-y-1 text-[15px] sm:text-base">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    <span>Tükenmeden Hissenizi Ayırtın</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Bize Ulaşın Section -->
+    <section id="contact" class="py-24 bg-white relative z-20">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-display font-bold text-brand-green mb-6">Bize Ulaşın</h2>
+                <div class="w-24 h-1.5 bg-gradient-to-r from-brand-green to-brand-accent mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+                <!-- Left Side: Contact Info -->
+                <div class="bg-stone-50 p-10 md:p-14 rounded-3xl border border-stone-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex flex-col justify-center">
+                    <div class="mb-10">
+                        <span class="text-brand-accent font-bold tracking-wider uppercase text-sm mb-3 block">Adresimiz</span>
+                        <p class="text-2xl md:text-3xl font-display font-bold text-stone-800 flex items-start gap-4">
+                            <i class="fa-solid fa-location-dot mt-1 text-brand-primary"></i> 
+                            Tavşanlı Köyü, Gebze / Kocaeli
+                        </p>
+                    </div>
+
+                    <div class="space-y-8">
+                        <div class="flex flex-col gap-6">
+                            <div>
+                                <span class="text-brand-accent font-bold tracking-wider uppercase text-sm mb-2 block">1. Telefon</span>
+                                <a href="tel:+905354831313" class="text-3xl md:text-3xl font-display font-bold text-brand-green hover:text-brand-light transition-colors flex items-center gap-4">
+                                    <i class="fa-solid fa-phone-volume"></i> 0535 483 13 13
+                                </a>
+                            </div>
+                            <div>
+                                <span class="text-brand-accent font-bold tracking-wider uppercase text-sm mb-2 block">2. Telefon</span>
+                                <a href="tel:+905458431113" class="text-3xl md:text-3xl font-display font-bold text-brand-green hover:text-brand-light transition-colors flex items-center gap-4">
+                                    <i class="fa-solid fa-phone-volume"></i> 0545 843 11 13
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Right Side: Maps Placeholder & Iframe -->
+                <div class="h-[400px] lg:h-auto min-h-[400px] w-full bg-stone-200 rounded-3xl overflow-hidden shadow-inner border border-stone-300 relative group">
+                    <iframe src="https://maps.google.com/maps?q=40.8385239,29.5002193&t=&z=17&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="absolute inset-0"></iframe>
+                    <a href="https://www.google.com/maps/place/40%C2%B050'18.7%22N+29%C2%B030'00.8%22E/@40.8385239,29.4976444,17z/data=!3m1!4b1!4m4!3m3!8m2!3d40.8385239!4d29.5002193?hl=tr&entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="absolute bottom-6 right-6 bg-white/90 backdrop-blur text-brand-green font-bold px-5 py-3 rounded-xl shadow-lg border border-stone-100 hover:bg-brand-primary hover:text-white transition-colors duration-300 flex items-center gap-2">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Haritayı Aç
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#112417] text-stone-300 py-12 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-brand-accent to-transparent opacity-30"></div>
+        <div class="max-w-7xl mx-auto px-4 md:px-8 flex flex-col items-center">
+            
+            <!-- Logo & Socials -->
+            <div class="flex flex-col md:flex-row w-full justify-between items-center border-b border-white/10 pb-8 mb-8 gap-6">
+                <!-- Footer Logo -->
+                <a href="#" class="flex items-center opacity-90 hover:opacity-100 transition-opacity p-2 -ml-2 drop-shadow-[0_0_15px_rgba(255,255,255,0.4)] bg-white/5 rounded-2xl">
+                    <img src="assets/logo.png" alt="EvET Besi Çiftliği" class="h-10 md:h-12 w-auto" />
+                </a>
+
+                <div class="flex gap-3">
+                    <a href="https://www.instagram.com/evetetciftligi/" target="_blank" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-pink-500 hover:text-white transition-all duration-300">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/905354831313" target="_blank" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-all duration-300">
+                        <i class="fa-brands fa-whatsapp pt-0.5"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- SEO Paragraph & Copyright -->
+            <div class="text-center md:text-left w-full flex flex-col md:flex-row justify-between items-end gap-6">
+                <!-- SEO Text -->
+                <p class="text-[11px] md:text-xs text-stone-500/70 leading-relaxed font-light max-w-3xl text-justify md:flex-1 selection:bg-brand-primary selection:text-white">
+                    EvET Besi Çiftliği, Gebze Tavşanlı köyünde kurbanlık satışı, büyükbaş hayvan satışı ve hisse satışı hizmetleri sunmaktadır. Doğal ortamda yetiştirilmiş, sağlıklı ve güvenilir büyükbaş hayvanlar.
+                </p>
+                <!-- Copyright -->
+                <div class="text-sm font-light text-stone-400 whitespace-nowrap md:ml-8">
+                    © 2026 EvET Besi Çiftliği. Tüm hakları saklıdır.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Custom Tailwind utilities like animations
+        tailwind.config.theme.extend.keyframes = {
+            shimmer: {
+                '100%': { transform: 'translateX(100%)' }
+            }
+        };
+
+        // Sticky Navbar Scroll Logic
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 30) {
+                // Scrolled state
+                navbar.classList.remove('bg-transparent', 'py-5');
+                navbar.classList.add('bg-[#1a3622]/95', 'backdrop-blur-lg', 'py-3', 'shadow-lg', 'border-b', 'border-white/5');
+            } else {
+                // Top state
+                navbar.classList.add('bg-transparent', 'py-5');
+                navbar.classList.remove('bg-[#1a3622]/95', 'backdrop-blur-lg', 'py-3', 'shadow-lg', 'border-b', 'border-white/5');
+            }
+        });
+
+
+
+        // Blog Accordion Logic
+        function toggleBlog(targetId, btn) {
+            const content = document.getElementById(targetId);
+            const icon = btn.querySelector('i');
+            const span = btn.querySelector('span');
+            
+            if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                content.style.maxHeight = '0px';
+                content.style.opacity = '0';
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+                span.innerText = "Devamını Oku";
+            } else {
+                content.style.maxHeight = content.scrollHeight + 50 + 'px'; // + buffer for padding
+                content.style.opacity = '1';
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+                span.innerText = "Kapat";
+            }
+        }
+
+        // Countdown Timer Logic
+        // Target Date: May 27, 2026, 00:00:00
+        const targetDate = new Date("May 27, 2026 00:00:00").getTime();
+
+        const updateCountdown = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            // If the countdown is finished, clear interval and set to 0
+            if (distance < 0) {
+                clearInterval(updateCountdown);
+                document.getElementById("cd-days").innerText = "00";
+                document.getElementById("cd-hours").innerText = "00";
+                document.getElementById("cd-minutes").innerText = "00";
+                document.getElementById("cd-seconds").innerText = "00";
+                return;
+            }
+
+            // Time calculations
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Update UI with padded zeroes
+            document.getElementById("cd-days").innerText = days.toString().padStart(2, '0');
+            document.getElementById("cd-hours").innerText = hours.toString().padStart(2, '0');
+            document.getElementById("cd-minutes").innerText = minutes.toString().padStart(2, '0');
+            document.getElementById("cd-seconds").innerText = seconds.toString().padStart(2, '0');
+        }, 1000);
+    </script>
+
+    <!-- LocalBusiness JSON-LD Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "EvET Besi Çiftliği",
+      "description": "Kocaeli Gebze Tavşanlı köyünde kurbanlık, hisse ve büyükbaş hayvan satışı yapan besi çiftliği.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Gebze",
+        "addressRegion": "Kocaeli",
+        "addressCountry": "TR",
+        "streetAddress": "Tavşanlı Köyü"
+      }
+    }
+    </script>
+</body>
+</html>
