@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telefon Aramasına Yönlendiriliyorsunuz...</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LYJWJB1JE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      // Sitenizin genel Analytics kodu
+      gtag('config', 'G-0LYJWJB1JE');
+    </script>
+
+    <script>
+        // Sayfa yüklendikten yarım saniye sonra otomatik olarak Telefon Aramasına yönlendir.
+        setTimeout(function() {
+            // Eğer URL'de özel bir telefon numarası parametresi varsa onu alalım, yoksa varsayılan numaraya gidelim.
+            const urlParams = new URLSearchParams(window.location.search);
+            const telParam = urlParams.get('tel');
+            
+            let targetUrl = "tel:+905354831313"; // Varsayılan numara
+            if (telParam) {
+                targetUrl = "tel:" + encodeURIComponent(telParam);
+            }
+            
+            window.location.replace(targetUrl);
+        }, 800); 
+    </script>
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0;
+            background-color: #f9fafb; 
+            color: #1a3622; 
+            text-align: center; 
+        }
+        .loader {
+            border: 4px solid #e5e7eb;
+            border-top: 4px solid #2d6a4f; /* Marka Yeşili */
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        h2 { font-size: 1.2rem; font-weight: 600; margin-bottom: 8px;}
+        p { color: #6b7280; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="loader"></div>
+        <h2>Arama Ekranına Yönlendiriliyorsunuz...</h2>
+        <p>Lütfen bekleyin, güvenli bir şekilde aktarılıyorsunuz.</p>
+    </div>
+</body>
+</html>
